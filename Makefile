@@ -73,7 +73,8 @@ deploy:
 	cp -r build/.hidden deploy
 	cp build/Noter.html deploy/index.html
 	cp FjernsynForDig-${RELEASE}.dmg deploy
-	scp -r deploy/* a:thomaslkjeldsen.dk/fjernsynfordig/
+	scp deploy/* a:thomaslkjeldsen.dk/fjernsynfordig/
+	scp -r deploy/.hidden a:thomaslkjeldsen.dk/fjernsynfordig/
 
 clean:
 	rm -rf build
