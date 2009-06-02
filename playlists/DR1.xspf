@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="0" xmlns="http://xspf.org/ns/0/">
+	<trackList>
+		<track>
+			<location>rtsp://streamer-01.dr.nordija.dk/dr1low</location>
+			<title>dr1low</title>
+		</track>
+		<track>
+			<location>rtsp://streamer-01.dr.nordija.dk/dr1high</location>
+			<title>dr1high</title>
+		</track>
+	</trackList>
+</playlist>
