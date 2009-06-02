@@ -27,10 +27,7 @@ RELEASE=0.4
 
 default: clean FjernsynForDig.dmg
 
-make-build-dirs:
-	mkdir -p build
-
-build/DR1.app: make-build-dirs
+build/DR1.app:
 	mkdir -p build/DR1.app/Contents/MacOS
 	mkdir -p build/DR1.app/Contents/Resources/
 	cp source/DR1.icns build/DR1.app/Contents/Resources
@@ -39,7 +36,7 @@ build/DR1.app: make-build-dirs
 	chmod +x build/DR1.app/Contents/MacOS/*.sh
 	echo "APPLFjFD" > build/DR1.app/Contents/PkgInfo
 
-build/DR2.app: make-build-dirs
+build/DR2.app:
 	mkdir -p build/DR2.app/Contents/MacOS
 	mkdir -p build/DR2.app/Contents/Resources/
 	cp source/DR2.icns build/DR2.app/Contents/Resources
