@@ -14,8 +14,8 @@
 
   <h1>Fjernsyn for dig</h1>
 
-  <a href="#DMG#"><img src=".hidden/FjernsynForDig_dmg.png"
-  alt="#DMG# disk image"/></a>
+  <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#"><img
+  src=".hidden/FjernsynForDig_dmg.png" alt="#DMG# disk image"/></a>
 
   <p>Se DR1 og DR2 via internettet på din Mac! Her er to små programmer der
   fungerer som genveje til at åbne DR's h264 test tv-signaler i
