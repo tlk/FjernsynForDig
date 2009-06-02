@@ -1,4 +1,4 @@
-# Copyright (c) 2009  Thomas L Kjeldsen
+# Copyright (c) 2009  Thomas L. Kjeldsen
 # 
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -59,10 +59,11 @@ FjernsynForDig-rw.dmg: FjernsynForDig.dmg
 
 clean:
 	rm -rf build
-	rm -rf FjernsynForDig-${RELEASE}.dmg
-	rm -rf FjernsynForDig-rw.dmg
+	rm -f index.html
+	rm -f FjernsynForDig-${RELEASE}.dmg
+	rm -f FjernsynForDig-rw.dmg
 
 deploy:
-	scp FjernsynForDig-${RELEASE}.dmg a:thomaslkjeldsen.dk/fjernsyn/
-	ssh a 'sed -e s/#DMG#/FjernsynForDig-${RELEASE}.dmg/g -e s/#DATE#/`LC_ALL=da_DK.ISO8859-1 date +%v`/ < ./thomaslkjeldsen.dk/fjernsyn/index.tpl > ./thomaslkjeldsen.dk/fjernsyn/index.html'
+	sed -e s/#DMG#/FjernsynForDig-${RELEASE}.dmg/g -e s/#DATE#/`LC_ALL=da_DK.ISO8859-1 date +%v`/ < source/index.tpl > index.html'
+	scp FjernsynForDig-${RELEASE}.dmg index.html a:thomaslkjeldsen.dk/fjernsynfordig/
 
