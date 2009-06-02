@@ -22,7 +22,7 @@
 # OTHER DEALINGS IN THE SOFTWARE.
 
 
-RELEASE=0.3
+RELEASE=0.4
 
 
 default: clean FjernsynForDig.dmg
@@ -48,22 +48,36 @@ build/DR2.app: make-build-dirs
 	chmod +x build/DR2.app/Contents/MacOS/*.sh
 	echo "APPLFjFD" > build/DR2.app/Contents/PkgInfo
 
-FjernsynForDig.dmg: build/DR1.app build/DR2.app
+build/Noter.html:
+	mkdir -p build/.hidden
+	cp gfx/FjernsynForDig_dmg.png build/.hidden/
+	cp source/style.css build/.hidden/
+	sed -e s/#DMG#/FjernsynForDig-${RELEASE}.dmg/g -e s,#UPDATED#,`date +%D`, < source/index.tpl > build/Noter.html
+
+FjernsynForDig.dmg: build/DR1.app build/DR2.app build/Noter.html
 	ln -s /Applications build/Programmer
-	cp source/Noter.rtf build/
 	cp source/ROOT_DS_STORE build/.DS_Store
 	hdiutil create -srcfolder build -volname FjernsynForDig FjernsynForDig-${RELEASE}.dmg
 
 FjernsynForDig-rw.dmg: FjernsynForDig.dmg
 	hdiutil convert -format UDRW -o FjernsynForDig-rw.dmg FjernsynForDig-${RELEASE}.dmg
 
+# Procedure to re-arrange icons:
+# 1. build and mount FjernsynForDig-rw.dmg
+# 2. re-arrange icons and folder settings with Finder
+# 3. unmount and re-mount FjernsynForDig-rw.dmg
+# 4. copy /Volumes/XYZ/.DS_Store to source/ROOT_DS_STORE
+
+deploy:
+	mkdir -p deploy
+	cp -r build/.hidden deploy
+	cp build/Noter.html deploy/index.html
+	cp FjernsynForDig-${RELEASE}.dmg deploy
+	scp -r deploy/* a:thomaslkjeldsen.dk/fjernsynfordig/
+
 clean:
 	rm -rf build
 	rm -f index.html
 	rm -f FjernsynForDig-${RELEASE}.dmg
 	rm -f FjernsynForDig-rw.dmg
-
-deploy:
-	sed -e s/#DMG#/FjernsynForDig-${RELEASE}.dmg/g -e s/#DATE#/`LC_ALL=da_DK.ISO8859-1 date +%v`/ < source/index.tpl > index.html'
-	scp FjernsynForDig-${RELEASE}.dmg index.html a:thomaslkjeldsen.dk/fjernsynfordig/
 
