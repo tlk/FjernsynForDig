@@ -22,7 +22,7 @@
 # OTHER DEALINGS IN THE SOFTWARE.
 
 
-RELEASE=0.4
+RELEASE=0.5
 
 
 default: clean FjernsynForDig.dmg
