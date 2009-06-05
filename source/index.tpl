@@ -59,7 +59,7 @@
   href="http://github.com/tlk/FjernsynForDig">github</a>.</p>
 
 
-  <img src=".hidden/screenshot3.jpg" id="screenshot"/>
+  <img src=".hidden/screenshot3.jpg" alt="Screenshot" id="screenshot"/>
 
 
  </div>
