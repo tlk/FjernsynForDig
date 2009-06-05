@@ -76,6 +76,7 @@ deploy:
 
 clean:
 	rm -rf build
+	rm -rf deploy
 	rm -f index.html
 	rm -f FjernsynForDig-${RELEASE}.dmg
 	rm -f FjernsynForDig-rw.dmg
