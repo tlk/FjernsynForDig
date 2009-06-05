@@ -23,7 +23,8 @@
 
   <p>Du kan læse mere på <a
   href="http://www.dr.dk/hjaelp/drdktv/20080108145038.htm">DR's hjemmeside</a>
-  eller blot hoppe videre og installere Fjernsyn for dig med det samme.</p>
+  eller blot hoppe videre og installere Fjernsyn for dig med det samme. Denne
+  side er senest opdateret #UPDATED#.</p>
 
 
   <h2>Installation</h2>
@@ -42,26 +43,25 @@
 
 
   <h2>Værd at vide</h2>
+  <p>Det er muligt at skifte mellem høj- og lav-kvalitetssignal ved at trykke
+  &#x2318; og &#8594; på samme tid. Dobbeltklik på videobilledet for at skifte
+  mellem vindue og fuld skærm.</p>
+
   <p>Hvis billede eller lyd er ringe kan det skyldes en langsom
   internetforbindelse. Det kan også skyldes udfald på tv-signalet fra DR, da
-  det stadig kører i test.</p>
+  det stadig kører i test. Det kan hænde at VLC går ned, hvis det sker for dig
+  så bare vælg "ignorer" og start DR1 eller DR2 igen :-)</p>
 
-  <p>Det er muligt at skifte mellem høj- og lav-kvalitetssignal ved at trykke
-  &#x2318; og &#8594; på samme tid.</p>
-
-  <p>Dobbeltklik på videobilledet for at skifte mellem vindue og fuld skærm.</p>
-
-  <p>VLC går nogle gange ned. Bare vælg "ignorer" og start DR1 eller DR2 igen
-  :-)</p>
+  <p>DR vil gerne have en <a
+  href="http://wiki.drstreaming.nordija.dk/index.php/Testresultat#Genveje_til_mac_via_thomaslkjeldsen.dk.2Ffjernsynfordig">tilbagemelding</a>
+  på om disse genvejs-programmer virker for dig. Hvis du er programmør kan du
+  finde kildekoden til disse små genvejsprogrammer på <a
+  href="http://github.com/tlk/FjernsynForDig">github</a>.</p>
 
 
   <img src=".hidden/screenshot3.jpg" id="screenshot"/>
 
 
-  <div>
-    <small id="updated">Sidst opdateret #UPDATED#</small>
-    <small id="rcs"><a href="http://github.com/tlk/FjernsynForDig">github</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://wiki.drstreaming.nordija.dk/index.php/Testresultat#Genveje_til_mac_via_thomaslkjeldsen.dk.2Ffjernsynfordig">dr streaming wiki</a></small>
-  </div>
  </div>
 
 </div>
