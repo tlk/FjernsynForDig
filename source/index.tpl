@@ -29,7 +29,7 @@
 
   <h2>Installation</h2>
   <p>Fjernsyn for dig virker kun hvis videoafspiller-programmet VLC er
-  installeret.</p>
+  installeret. Sådan installerer du VLC og Fjernsyn for dig:</p>
 
   <ol>
     <li>Hent denne pakke: <a
