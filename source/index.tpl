@@ -15,7 +15,7 @@
   <h1>Fjernsyn for dig</h1>
 
   <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#"><img
-  src=".hidden/FjernsynForDig_dmg.png" alt="#DMG# disk image"/></a>
+  src=".hidden/dmg.jpg" alt="#DMG# disk image" id="dmg"/></a>
 
   <p>Se DR1 og DR2 via internettet på din Mac! Her er to små programmer der
   fungerer som genveje til at åbne DR's h264 test tv-signaler i
@@ -35,7 +35,7 @@
     href="http://www.videolan.org/mirror-geo.php?file=vlc/0.9.9a/macosx/vlc-0.9.9a.dmg">vlc-0.9.9a.dmg</a></li>
     <li>Åbn pakken og træk VLC-ikonet over i "Applications"</li>
     <li>Hent denne pakke: <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#">#DMG#</a></li>
-    <li>Åbn pakken og Træk DR1 og DR2 ikonerne over i "Programmer"</li>
+    <li>Åbn pakken og træk DR1 og DR2 ikonerne over i "Programmer"</li>
   </ol>
 
   <p>Så er der fjernsyn for dig!</p>
@@ -47,7 +47,7 @@
   det stadig kører i test.</p>
 
   <p>Det er muligt at skifte mellem høj- og lav-kvalitetssignal ved at trykke
-  &#x2318; og &#8594;</p>
+  &#x2318; og &#8594; på samme tid.</p>
 
   <p>Dobbeltklik på videobilledet for at skifte mellem vindue og fuld skærm.</p>
 
@@ -55,10 +55,12 @@
   :-)</p>
 
 
-  <hr/>
+  <img src=".hidden/screenshot3.jpg" id="screenshot"/>
+
+
   <div>
-  <small id="updated">Sidst opdateret #UPDATED#</small>
-  <small id="rcs"><a href="http://github.com/tlk/FjernsynForDig">github</a></small>
+    <small id="updated">Sidst opdateret #UPDATED#</small>
+    <small id="rcs"><a href="http://github.com/tlk/FjernsynForDig">github</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://wiki.drstreaming.nordija.dk/index.php/Testresultat#Genveje_til_mac_via_thomaslkjeldsen.dk.2Ffjernsynfordig">dr streaming wiki</a></small>
   </div>
  </div>
 

@@ -47,7 +47,8 @@ build/DR2.app:
 
 build/Noter.html:
 	mkdir -p build/.hidden
-	cp gfx/FjernsynForDig_dmg.png build/.hidden/
+	cp gfx/dmg.jpg build/.hidden/
+	cp gfx/screenshot3.jpg build/.hidden/
 	cp source/style.css build/.hidden/
 	sed -e s/#DMG#/FjernsynForDig-${RELEASE}.dmg/g -e s,#UPDATED#,`date +%D`, < source/index.tpl > build/Noter.html
 
