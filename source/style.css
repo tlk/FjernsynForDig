@@ -5,7 +5,7 @@ body {
 
 #container {
   margin: 0px auto;
-  width: 750px;
+  width: 800px;
   border-width: thin; 
   border-style: solid;
   background: #ffffff;
@@ -27,11 +27,13 @@ a:hover { color: black; text-decoration: underline; }
 
 h1, h2, h3, h4 { margin-bottom: 1em; margin-top:2em;}
 p { margin-top: 0px; }
-img {
-  border-width: thin; 
-  border-style: solid;
+#screenshot {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+#dmg {
   float: right;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 hr { margin-top: 50px;}
 
