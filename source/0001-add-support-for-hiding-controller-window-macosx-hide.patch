@@ -1,0 +1,52 @@
+From 930445a18ba9b22de72a2c93e60f9b6cd816a7b5 Mon Sep 17 00:00:00 2001
+From: Thomas L. Kjeldsen <tlk@mayi.dk>
+Date: Sat, 6 Jun 2009 08:11:30 +0200
+Subject: [PATCH] add support for hiding controller window (--macosx-hide-controller)
+
+---
+ modules/gui/macosx/intf.m   |    5 +++++
+ modules/gui/macosx/macosx.m |    5 +++++
+ 2 files changed, 10 insertions(+), 0 deletions(-)
+
+diff --git a/modules/gui/macosx/intf.m b/modules/gui/macosx/intf.m
+index afb2aa6..070ff90 100644
+--- a/modules/gui/macosx/intf.m
++++ b/modules/gui/macosx/intf.m
+@@ -482,6 +482,11 @@ static VLCMain *_o_sharedMainInstance = nil;
+            name:NSWorkspaceWillSleepNotification object:nil];
+ 
+     [NSThread detachNewThreadSelector:@selector(lookForCrashLog) toTarget:self withObject:nil];
++
++    /* hide controller window */
++    BOOL b_hidecontroller = config_GetInt( VLCIntf, "macosx-hide-controller" );
++    if (b_hidecontroller)
++        [o_window close];
+ }
+ 
+ - (void)initStrings
+diff --git a/modules/gui/macosx/macosx.m b/modules/gui/macosx/macosx.m
+index 9d4404d..a4869b8 100644
+--- a/modules/gui/macosx/macosx.m
++++ b/modules/gui/macosx/macosx.m
+@@ -87,6 +87,9 @@ void CloseVideoGL ( vlc_object_t * );
+ #define EQ_KEEP_LONGTEXT N_("By default, VLC keeps the last equalizer settings before " \
+                             "termination. This feature can be disabled here.")
+ 
++#define HIDECONTROLLER_TEXT N_("Hide main controller window")
++#define HIDECONTROLLER_LONGTEXT N_("Hide main controller window")
++
+ vlc_module_begin();
+     set_description( N_("Mac OS X interface") );
+     set_capability( "interface", 200 );
+@@ -101,6 +104,8 @@ vlc_module_begin();
+               false );
+     add_bool( "macosx-fspanel", 1, NULL, FSPANEL_TEXT, FSPANEL_LONGTEXT,
+               false );
++    add_bool( "macosx-hide-controller", 0, NULL, HIDECONTROLLER_TEXT, HIDECONTROLLER_LONGTEXT,
++              false );
+ 
+     add_submodule();
+         set_description( "Mac OS X OpenGL" );
+-- 
+1.6.3.1
+
