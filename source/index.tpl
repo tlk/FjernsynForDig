@@ -59,7 +59,8 @@
   href="http://github.com/tlk/FjernsynForDig">github</a>.</p>
 
 
-  <img src=".hidden/screenshot3.jpg" alt="Screenshot" id="screenshot"/>
+  <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#"><img
+  src=".hidden/screenshot3.jpg" alt="Screenshot" id="screenshot"/></a>
 
 
  </div>
