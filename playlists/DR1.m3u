@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTVLCOPT:rtsp-tcp
+rtsp://streamer-01.dr.nordija.dk/dr1high
+#EXTVLCOPT:rtsp-tcp
+rtsp://streamer-01.dr.nordija.dk/dr1low
