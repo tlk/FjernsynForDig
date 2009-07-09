@@ -49,8 +49,10 @@
 
   <p>Hvis billede eller lyd er ringe kan det skyldes en langsom
   internetforbindelse. Det kan også skyldes udfald på tv-signalet fra DR, da
-  det stadig kører i test. Det kan hænde at VLC går ned, hvis det sker for dig
-  så bare vælg "ignorer" og start DR1 eller DR2 igen :-)</p>
+  det stadig kører i test. Hvis tv-signalerne er ude af drift "fryser" VLC
+  desværre i op til 5min uden at der sker noget. Du kan se <a
+  href="http://www.thomaslkjeldsen.dk/fjernsynfordig/streams">status for
+  tv-signalerne</a>, hvis du oplever problemer.</p>
 
   <p>DR vil gerne have en <a
   href="http://wiki.drstreaming.nordija.dk/index.php/Testresultat#Genveje_til_mac_via_thomaslkjeldsen.dk.2Ffjernsynfordig">tilbagemelding</a>
