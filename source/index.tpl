@@ -19,8 +19,6 @@
 
 
   <h2>Installation</h2>
-  <p>Sådan installerer du Fjernsyn for dig:</p>
-
   <ol>
     <li>Hent denne pakke: <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#">#DMG#</a></li>
     <li>Åbn pakken og træk DR1 og DR2 ikonerne over i "Programmer"</li>
@@ -28,7 +26,7 @@
   </ol>
 
   <p>Programmerne virker kun hvis videoafspiller-programmet VLC er
-  installeret. Sådan installerer du VLC:</p>
+  installeret. Sådan installeres VLC:</p>
 
   <ol>
     <li>Hent denne pakke: <a
