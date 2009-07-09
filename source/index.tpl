@@ -12,34 +12,30 @@
 
  <div id="content">
 
-  <h1>Fjernsyn for dig</h1>
+  <h1>DR1 og DR2 live på din Mac!</h1>
 
   <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#"><img
   src=".hidden/dmg.jpg" alt="#DMG# disk image" id="dmg"/></a>
 
-  <p>Se DR1 og DR2 via internettet på din Mac! Her er to små programmer der
-  fungerer som genveje til at åbne DR's h264 test tv-signaler i
-  videoafspilleren VLC, også kendt som "kegleprogrammet".</p>
-
-  <p>Du kan læse mere på <a
-  href="http://www.dr.dk/hjaelp/drdktv/20080108145038.htm">DR's hjemmeside</a>
-  eller blot hoppe videre og installere Fjernsyn for dig med det samme. Denne
-  side er senest opdateret #UPDATED#.</p>
-
 
   <h2>Installation</h2>
-  <p>Fjernsyn for dig virker kun hvis videoafspiller-programmet VLC er
-  installeret. Sådan installerer du VLC og Fjernsyn for dig:</p>
+  <p>Sådan installerer du Fjernsyn for dig:</p>
+
+  <ol>
+    <li>Hent denne pakke: <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#">#DMG#</a></li>
+    <li>Åbn pakken og træk DR1 og DR2 ikonerne over i "Programmer"</li>
+    <li>Nu kan du se fjernsyn ved at starte DR1.app og DR2.app!</li>
+  </ol>
+
+  <p>Programmerne virker kun hvis videoafspiller-programmet VLC er
+  installeret. Sådan installerer du VLC:</p>
 
   <ol>
     <li>Hent denne pakke: <a
     href="http://www.videolan.org/mirror-geo.php?file=vlc/0.9.9a/macosx/vlc-0.9.9a.dmg">vlc-0.9.9a.dmg</a></li>
     <li>Åbn pakken og træk VLC-ikonet over i "Applications"</li>
-    <li>Hent denne pakke: <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#">#DMG#</a></li>
-    <li>Åbn pakken og træk DR1 og DR2 ikonerne over i "Programmer"</li>
   </ol>
 
-  <p>Så er der fjernsyn for dig!</p>
 
 
   <h2>Værd at vide</h2>
@@ -50,7 +46,7 @@
   <p>Hvis billede eller lyd er ringe kan det skyldes en langsom
   internetforbindelse. Det kan også skyldes udfald på tv-signalet fra DR, da
   det stadig kører i test. Hvis tv-signalerne er ude af drift "fryser" VLC
-  desværre i op til 5min uden at der sker noget. Du kan se <a
+  desværre op til 5 minutter uden at der sker noget. Du kan se <a
   href="http://www.thomaslkjeldsen.dk/fjernsynfordig/streams">status for
   tv-signalerne</a>, hvis du oplever problemer.</p>
 
@@ -58,7 +54,12 @@
   href="http://wiki.drstreaming.nordija.dk/index.php/Testresultat#Genveje_til_mac_via_thomaslkjeldsen.dk.2Ffjernsynfordig">tilbagemelding</a>
   på om disse genvejs-programmer virker for dig. Hvis du er programmør kan du
   finde kildekoden til disse små genvejsprogrammer på <a
-  href="http://github.com/tlk/FjernsynForDig">github</a>.</p>
+  href="http://github.com/tlk/FjernsynForDig">github</a>. Det er blot to ikoner
+  og et par shell scripts der åbner <a
+  href="http://www.dr.dk/hjaelp/drdktv/20080108145038.htm">DR's h264
+  tv-signaler</a> i videoafspilleren VLC.</p>
+
+  <p>Denne side er senest opdateret #UPDATED#.</p>
 
 
   <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#"><img
