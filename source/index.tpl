@@ -22,7 +22,7 @@
   <ol>
     <li>Hent denne pakke: <a href="http://www.thomaslkjeldsen.dk/fjernsynfordig/#DMG#">#DMG#</a></li>
     <li>Åbn pakken og træk DR1 og DR2 ikonerne over i "Programmer"</li>
-    <li>Nu kan du se fjernsyn ved at starte DR1.app og DR2.app!</li>
+    <li>Nu kan du se fjernsyn ved at starte DR1 og DR2 programmerne!</li>
   </ol>
 
   <p>Programmerne virker kun hvis videoafspiller-programmet VLC er
@@ -44,9 +44,9 @@
   <p>Hvis billede eller lyd er ringe kan det skyldes en langsom
   internetforbindelse. Det kan også skyldes udfald på tv-signalet fra DR, da
   det stadig kører i test. Hvis tv-signalerne er ude af drift "fryser" VLC
-  desværre op til 5 minutter uden at der sker noget. Du kan se <a
+  desværre op til 5 minutter uden at der sker noget. Tjek <a
   href="http://www.thomaslkjeldsen.dk/fjernsynfordig/streams">status for
-  tv-signalerne</a>, hvis du oplever problemer.</p>
+  tv-signalerne</a> hvis du oplever problemer.</p>
 
   <p>DR vil gerne have en <a
   href="http://wiki.drstreaming.nordija.dk/index.php/Testresultat#Genveje_til_mac_via_thomaslkjeldsen.dk.2Ffjernsynfordig">tilbagemelding</a>
